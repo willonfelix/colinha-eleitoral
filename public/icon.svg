@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff6b35" />
+      <stop offset="100%" stop-color="#e03e00" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-opacity="0.25" />
+    </filter>
+  </defs>
+  <!-- Background with rounded corners -->
+  <rect width="512" height="512" rx="100" fill="url(#bg)" />
+  
+  <!-- Stylized Ballot / Colinha Paper -->
+  <g filter="url(#shadow)">
+    <!-- White Card with rounded corners -->
+    <rect x="116" y="96" width="280" height="320" rx="24" fill="#ffffff" />
+    
+    <!-- Top Card Header Strip (Green / Yellow Brazilian hint or Orange theme) -->
+    <path d="M 116 120 Q 116 96 140 96 L 372 96 Q 396 96 396 120 L 396 150 L 116 150 Z" fill="#fa551e" />
+    
+    <!-- Header title text lines on santinho -->
+    <rect x="156" y="116" width="200" height="14" rx="7" fill="#ffffff" opacity="0.9" />
+    
+    <!-- Ballot Checkmark & Vote boxes representation -->
+    <!-- Row 1 -->
+    <rect x="156" y="180" width="70" height="12" rx="6" fill="#cbd5e1" />
+    <rect x="246" y="172" width="28" height="28" rx="4" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2" />
+    <rect x="282" y="172" width="28" height="28" rx="4" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2" />
+    <rect x="318" y="172" width="28" height="28" rx="4" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2" />
+    <rect x="354" y="172" width="28" height="28" rx="4" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2" />
+
+    <!-- Row 2 -->
+    <rect x="156" y="230" width="80" height="12" rx="6" fill="#cbd5e1" />
+    <rect x="256" y="222" width="28" height="28" rx="4" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2" />
+    <rect x="292" y="222" width="28" height="28" rx="4" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2" />
+    <rect x="328" y="222" width="28" height="28" rx="4" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2" />
+
+    <!-- Big Green Confirmed Checkmark -->
+    <circle cx="256" cy="326" r="44" fill="#16a34a" />
+    <path d="M 238 326 L 250 338 L 274 314" fill="none" stroke="#ffffff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+</svg>

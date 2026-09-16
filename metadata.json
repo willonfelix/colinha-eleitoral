@@ -1,0 +1,6 @@
+{
+  "name": "Colinha Eleitoral - Vote Certo",
+  "description": "Aplicativo PWA seguro e offline com IndexedDB para anotação de números de candidatos em formato de santinho e urna eletrônica.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

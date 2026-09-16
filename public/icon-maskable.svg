@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg_m" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff6b35" />
+      <stop offset="100%" stop-color="#e03e00" />
+    </linearGradient>
+    <filter id="shadow_m" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-opacity="0.2" />
+    </filter>
+  </defs>
+  <!-- Full bleed background for Android maskable cropping -->
+  <rect width="512" height="512" fill="url(#bg_m)" />
+  
+  <!-- Content scaled inside the safe zone (within 80% circle / ~400px diameter) -->
+  <g transform="translate(256, 256) scale(0.82) translate(-256, -256)" filter="url(#shadow_m)">
+    <!-- White Card with rounded corners -->
+    <rect x="126" y="106" width="260" height="300" rx="22" fill="#ffffff" />
+    
+    <!-- Top Card Header Strip -->
+    <path d="M 126 128 Q 126 106 148 106 L 364 106 Q 386 106 386 128 L 386 156 L 126 156 Z" fill="#fa551e" />
+    
+    <!-- Header title text lines on santinho -->
+    <rect x="166" y="124" width="180" height="14" rx="7" fill="#ffffff" opacity="0.9" />
+    
+    <!-- Ballot Checkmark & Vote boxes representation -->
+    <!-- Row 1 -->
+    <rect x="160" y="184" width="65" height="12" rx="6" fill="#cbd5e1" />
+    <rect x="246" y="176" width="26" height="26" rx="4" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2" />
+    <rect x="280" y="176" width="26" height="26" rx="4" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2" />
+    <rect x="314" y="176" width="26" height="26" rx="4" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2" />
+    <rect x="348" y="176" width="26" height="26" rx="4" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2" />
+
+    <!-- Row 2 -->
+    <rect x="160" y="230" width="75" height="12" rx="6" fill="#cbd5e1" />
+    <rect x="254" y="222" width="26" height="26" rx="4" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2" />
+    <rect x="288" y="222" width="26" height="26" rx="4" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2" />
+    <rect x="322" y="222" width="26" height="26" rx="4" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2" />
+
+    <!-- Big Green Confirmed Checkmark -->
+    <circle cx="256" cy="326" r="42" fill="#16a34a" />
+    <path d="M 240 326 L 251 337 L 273 315" fill="none" stroke="#ffffff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+</svg>
